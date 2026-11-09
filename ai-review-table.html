@@ -1,0 +1,40 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-vbt0{border-width:0px 1px 1px 0px;text-align:left;vertical-align:top}
+.tg .tg-9crw{border-width:0px 1px 1px;text-align:left;vertical-align:top}
+.tg .tg-82cb{background-color:#efefef;border-width:1px 1px 1px 0px;text-align:left;vertical-align:top}
+.tg .tg-ultb{background-color:#efefef;border-width:1px;text-align:left;vertical-align:top}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-ultb">&nbsp;&nbsp;&nbsp;&nbsp;<br>Metric&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th class="tg-82cb">&nbsp;&nbsp;&nbsp;&nbsp;<br>What it measures&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th class="tg-82cb">&nbsp;&nbsp;&nbsp;&nbsp;<br>How to read it&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-9crw">&nbsp;&nbsp;&nbsp;<br>First-pass approval rate&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>Share of AI-generated PRs approved without&nbsp;&nbsp;&nbsp;change requests&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>Above 90%: reviews are probably not thorough&nbsp;&nbsp;&nbsp;enough. Below 30%: improve the prompts or the context given to the model.&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-9crw">&nbsp;&nbsp;&nbsp;<br>Post-merge defect rate&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>Bugs per PR after merge, for AI-generated&nbsp;&nbsp;&nbsp;and human-written code&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>A higher rate for AI-generated code means&nbsp;&nbsp;&nbsp;the review process misses problems. This is the most reliable metric.&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-9crw">&nbsp;&nbsp;&nbsp;<br>Review time&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>Time spent reviewing AI-generated PRs&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>Shorter reviews with a stable defect rate:&nbsp;&nbsp;&nbsp;the team is improving. Shorter reviews with a rising defect rate: reviewers&nbsp;&nbsp;&nbsp;are approving without checking.&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-9crw">&nbsp;&nbsp;&nbsp;<br>Change request categories&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>Change requests tagged by problem type, for&nbsp;&nbsp;&nbsp;example non-existent API, weak test, or missing edge case&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-vbt0">&nbsp;&nbsp;&nbsp;<br>Shows which problems occur most often in&nbsp;&nbsp;&nbsp;your codebase, so you know where to focus reviews.&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+</tbody></table>
